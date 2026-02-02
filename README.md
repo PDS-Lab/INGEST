@@ -1,5 +1,8 @@
 # INGEST
 
+# Note on RDMA dependency.
+The lcoro library used by our CMake configuration contains unpublished RDMA optimizations that are not part of this paper. The techniques and evaluation in this work do not rely on RDMA-specific optimizations. To reproduce the system, users should replace the RDMA-related components with their own RDMA implementation. The key algorithms presented in this paper are implemented in algo.h.
+
 ## Prepare
 
 ### Data Preparation
